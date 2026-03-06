@@ -6,8 +6,8 @@ const app = express();
 app.use(express.json());
 
 // Replace with your Prokerala credentials
-const CLIENT_ID = "032ce4e4-711b-4c90-b750-3d19f4b44186";
-const CLIENT_SECRET = "DzIuAYf0tO9TOZB735QUcs8YIYNMcE90EuJ7fFG3c";
+const clientId = process.env.PROKERALA_CLIENT_ID;
+const clientSecret = process.env.PROKERALA_CLIENT_SECRET;
 
 // Function to get token from Prokerala
 async function getAccessToken() {
