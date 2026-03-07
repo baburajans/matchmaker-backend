@@ -1,6 +1,6 @@
 // server.js
 const express = require("express");
-const fetch = require("node-fetch"); // install with: npm install express node-fetch
+//const fetch = require("node-fetch"); // install with: npm install express node-fetch
 
 const app = express();
 app.use(express.json());
