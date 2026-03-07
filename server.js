@@ -16,8 +16,8 @@ async function getAccessToken() {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams({
       grant_type: "client_credentials",
-      client_id: CLIENT_ID,
-      client_secret: CLIENT_SECRET
+      client_id: clientId,
+      client_secret: clientSecret
     })
   });
 
